@@ -1,11 +1,11 @@
 # Basic
-title: 小黑特
+title: 爱可乐的松鼠
 subtitle: 个人站
 description: 欢迎来到我的个人站~
 # 头像里面的标题
-avatarTitle: Te-Shi
+avatarTitle: lyj
 # 头像里面的描述
-avatarDesc: 机器学习/计算机视觉
+avatarDesc: 语音识别
 url: "http://yongjielv.com.cn"
 
 # Comment
@@ -16,19 +16,19 @@ comment:
 
 # Social
 social:
-    weibo: 5986156033
-    github: te-shi
+    # weibo: 
+    github: lyjzsyzlt
     # zhihu: panpanleopard
     # juejin: xxx
     #jianshu: 2ada30d8d0f7
     # twitter:
-    mail: te.shi@foxmail.com
+    mail: yongjie_lv@tju.edu.cn
 
 
 # 百度统计
 # 使用博客模板请去掉或者更换 id
 baidu:
-    id: 6ff3dd21c7515cc940870717701fd4fb
+    id: 6257ed2a87a9c709fd5a60a35ba266
 
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
