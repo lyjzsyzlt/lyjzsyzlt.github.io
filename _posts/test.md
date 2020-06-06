@@ -1,7 +1,7 @@
 ---
 layout: post
 title: test
-tags: 博客   
+tags: 博客
 ---
 
 # 测试一下
