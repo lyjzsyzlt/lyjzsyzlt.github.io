@@ -9,9 +9,9 @@ I am currently a undergraduate with School of Computer Science and Technology, A
 
 ### Education
 
-* 2020.08~ M.S. major in Pattern Recognition and Intelligent System, Wuhan University.
+* 2019.08~ M.S. major in Pattern Recognition and Intelligent System, Wuhan University.
 
-* 2016.09~2020.07 B.S. major in Software Engineering, Anhui University.	
+* 2015.09~2019.07 B.S. major in Software Engineering, Anhui University.	
 
 
 ### Computer Skills
@@ -22,7 +22,7 @@ I am currently a undergraduate with School of Computer Science and Technology, A
 
 ### Contact me  
 
-* Email: te.shi@foxmail.com   
+* Email: yongjie_lv@tju.edu.cn
  
 * Github: lyjzsyzlt
  
