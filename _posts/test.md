@@ -8,8 +8,8 @@ tag: 测试
 # 这是一个测试帖
 ## 代码测试
 
-```@python
-    def __init__(self, output_size, d_model=256, attention_heads=4, linear_units=2048, num_blocks=6, pos_dropout_rate=0.0, 
+```
+def __init__(self, output_size, d_model=256, attention_heads=4, linear_units=2048, num_blocks=6, pos_dropout_rate=0.0, 
                  slf_attn_dropout_rate=0.0, src_attn_dropout_rate=0.0, ffn_dropout_rate=0.0, residual_dropout_rate=0.1,
                  activation='relu', normalize_before=True, concat_after=False, share_embedding=False):
         super(TransformerDecoder, self).__init__()
