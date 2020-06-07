@@ -4,21 +4,21 @@ title: Curriculum Vitae
 ---
 ### About me
 
-I am currently a undergraduate with School of Computer Science and Technology, Anhui University. And I will start my master degree in School of Remote Sensing and Information Engineering, Wuhan University, under the supervision of Prof. <a href="http://www.escience.cn/people/liyansheng01/index.html">Yansheng Li</a>. My research interests include computer vision, machine learning.
+I received my B.E. degree in 2019 from Anhui University, Hefei, China, and I am currently pursuing a M.E. degree from Tianjin University, Tianjin, China. At present, my main research area is automatic speech recognition, including model compression and streaming end-to-end speech recognition.
 
 
 ### Education
 
-* 2019.08~ M.S. major in Pattern Recognition and Intelligent System, Wuhan University.
+* 2019.09~        M.S. major in Computer Technology, Tianjin University.
 
 * 2015.09~2019.07 B.S. major in Software Engineering, Anhui University.	
 
 
 ### Computer Skills
 
-* Programming Languages: C/C++, Python, Java, Matlab
+* Programming Languages: C/C++, Python, Java
 
-* Libraries: Tensorflow, Pytorch
+* Libraries: Pytorch
 
 ### Contact me  
 
