@@ -21,8 +21,8 @@ bash Anaconda3-5.3.0-Linux-x86_64.sh
 ```
 conda create --prefix=/Work/anaconda3/envs/py36 python=3.6
 ```
---prefix 指定创建的环境存放的位置，最好为anaconda安装路径下面的envs文件夹，这样以后激活的时候，环境名就是py36，不会是很长的一串路径
-python=3.6 指定安装的python版本
+- --prefix 指定创建的环境存放的位置，最好为anaconda安装路径下面的envs文件夹，这样以后激活的时候，环境名就是py36，不会是很长的一串路径 <br>
+- python=3.6 指定安装的python版本
 
 ### 3.2 删除虚拟环境
 ```
