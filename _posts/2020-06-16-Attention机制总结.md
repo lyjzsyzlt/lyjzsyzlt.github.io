@@ -42,4 +42,5 @@ a_t&=f(c_t,h_t)=tanh(W_c[c_t;h_t])&输入decoder计算(3)
    将encoder的状态和decoder的状态进行点乘，得到的结果作为该状态的分数，即$score(h_t,h_s)=h_t^Th_s$
 
 self-attention 指的是序列（source或target）内部进行attention计算，这样可以学习到句子内部的一些句法信息，transformer模型完全基于self-attention，在语音识别，机器翻译等领域取得很不错的结果
+
 ![attention](https://upload-images.jianshu.io/upload_images/4434395-5125fc0176bb99bb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
