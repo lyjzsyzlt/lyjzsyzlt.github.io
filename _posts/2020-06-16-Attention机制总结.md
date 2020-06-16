@@ -25,7 +25,8 @@ tags: ASR
 
 在seq2seq模型中，encoder负责将原始输入特征进行高维抽象，比如将40维的fbank最终抽象成1024维的向量。decoder每一步的计算都需要encoder的输出，但是在decoder每一个时间步中，每一帧的语音所发挥的作用是不同的，所以需要对这些向量赋予不同的权重，然后使用这个权重对encoder各个状态进行加权求和得到context vector，最终将这个context vector输入到decoder进行计算。<br>
 总结一下就是如下过程：<br>
-记encoder的状态为$h_s$，decoder的状态为$h_t$
+记encoder的状态为$h_s$，decoder的状态为$h_t$ <br>
+
 $$\begin{aligned}
    \alpha_{ts}&=\frac{exp(score(h_t,h_s))}{\sum_{s'=1}^Sexp(score(h_t,h_{s'}))}&计算权重(1) \\
 c_t&=\sum_{s}\alpha_{ts}h_s&加权求和(2) \\
