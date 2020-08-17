@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2020-06-22-pytorch tensor基本操作
+title: pytorch tensor基本操作
 date: 2020-06-22
 tags: pytorch    
 ---
