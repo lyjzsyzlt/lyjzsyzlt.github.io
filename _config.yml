@@ -7,7 +7,7 @@ avatarTitle: lyj
 # 头像里面的描述
 avatarDesc: 语音识别
 url: "https://lyjzsyzlt.github.io/"
-
+markdown: kramdown
 # Comment
 comment:
     #disqus: leopard
