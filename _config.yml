@@ -8,6 +8,7 @@ avatarTitle: lyj
 avatarDesc: 语音识别
 url: "https://lyjzsyzlt.github.io/"
 markdown: kramdown
+tex: true
 # Comment
 comment:
     #disqus: leopard
