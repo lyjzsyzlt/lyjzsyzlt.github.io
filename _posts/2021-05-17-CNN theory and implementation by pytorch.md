@@ -22,12 +22,15 @@ tags: pytorch
 
 # CNN计算
 记输入维度为$m \times n$，卷积核维度为$k1 \times k2$，paddding大小为$p$，步长为$s$，则输出维度为：
+
 $$x = (m-k1+2*p)/s+1$$
 $$y=(n-k2+2*p)/s+1$$
 
 ![多通道CNN演示，来源zhuanlan.zhihu.com/p/29119239](/images/posts/2021-05-17-15-16-30.jpg)
+*多通道CNN演示，来源zhuanlan.zhihu.com/p/29119239*
 
 ![详细计算过程，来自 zhuanlan.zhihu.com/p/251068800](/images/posts/2021-05-17-15-17-56.png)
+*详细计算过程，来自 zhuanlan.zhihu.com/p/251068800*
 
 
 # 为什么需要池化层？
@@ -63,7 +66,6 @@ def seed_torch(seed=1029):
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.enabled = False
 
-
 def img2col(img, kernel_size, stride=1):
     """
     将输入矩阵img按照滑动方式取出来，组成新的矩阵，方便与卷积的参数直接矩阵乘
@@ -91,7 +93,6 @@ def img2col(img, kernel_size, stride=1):
     # print(img[0,:,0:K, 0:K])
     # print(col[0,0,:])  两者的结果应一致
     return col
-
 
 class Conv():
     def __init__(self, in_channels, out_channels, kernel_size, stride=1):
@@ -123,7 +124,6 @@ class Conv():
         weight = self.weight.view(self.out_ch, self.k * self.k * self.in_ch).transpose(0, 1)  # (in_ch x K x K) x out_ch
         res = (torch.matmul(col, weight) + self.bias.view(1, 1, -1)).transpose(1, 2).contiguous().reshape(N, self.out_ch, out_h,out_w)
         return res
-
 
 class MaxPool():
     def __init__(self, kernel_size, stride=1):
@@ -173,6 +173,7 @@ if __name__ == '__main__':
     print(gt[0, 0, 1:5, 2:8])
     print(pre[0, 0, 1:5, 2:8])
 ```
+
 ![输出结果](/images/posts/2021-05-17-15-20-21.png)
 # CNN反向传播
 
