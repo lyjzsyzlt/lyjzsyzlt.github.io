@@ -22,8 +22,8 @@ tags: pytorch
 
 # CNN计算
 记输入维度为$m \times n$，卷积核维度为$k1 \times k2$，paddding大小为$p$，步长为$s$，则输出维度为：
-$x = (m-k1+2*p)/s+1$
-$y=(n-k2+2*p)/s+1$
+$$x = (m-k1+2*p)/s+1$$
+$$y=(n-k2+2*p)/s+1$$
 
 ![多通道CNN演示，来源zhuanlan.zhihu.com/p/29119239](/images/posts/2021-05-17-15-16-30.jpg)
 
@@ -32,15 +32,20 @@ $y=(n-k2+2*p)/s+1$
 
 # 为什么需要池化层？
 1) 池化层可以减少feature map的尺寸, 进而减少计算量. 当然stride大于1的卷积层也可以减少feature map的尺寸.
+
 2) 池化层可以增加感受野. 不过卷积核尺寸大于1的卷积层同样也可以增加感受野.
+
 3) 池化层可以带来特征的平移, 旋转等不变性.
+
 4) (最大值等)池化层一般是非线性操作, 可以增强网络的表达能力. 激活层一般也是非线性的.
+
 来自：https://www.zhihu.com/question/401688068/answer/1295651905
 
 # CNN前向传播实现
 ![](/images/posts/2021-05-17-15-19-56.png)
 
 我的简单实现：
+
 ```
 import numpy as np
 import random
@@ -116,9 +121,7 @@ class Conv():
         col = img2col(x, self.k, self.s)  # N x (out_h x out_w) x (K x K x in_ch)
 
         weight = self.weight.view(self.out_ch, self.k * self.k * self.in_ch).transpose(0, 1)  # (in_ch x K x K) x out_ch
-        res = (torch.matmul(col, weight) + self.bias.view(1, 1, -1)).transpose(1, 2).contiguous().reshape(N,
-                                                                                                          self.out_ch,
-                                                                                                          out_h, out_w)
+        res = (torch.matmul(col, weight) + self.bias.view(1, 1, -1)).transpose(1, 2).contiguous().reshape(N, self.out_ch, out_h,out_w)
         return res
 
 
