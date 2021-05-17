@@ -24,13 +24,13 @@ tags: pytorch
 记输入维度为$m \times n$，卷积核维度为$k1 \times k2$，paddding大小为$p$，步长为$s$，则输出维度为：
 
 $$x = (m-k1+2*p)/s+1$$
+
 $$y=(n-k2+2*p)/s+1$$
 
 ![多通道CNN演示，来源zhuanlan.zhihu.com/p/29119239](/images/posts/2021-05-17-15-16-30.jpg)
-*多通道CNN演示，来源zhuanlan.zhihu.com/p/29119239*
+多通道CNN演示，来源zhuanlan.zhihu.com/p/29119239
 
-![详细计算过程，来自 zhuanlan.zhihu.com/p/251068800](/images/posts/2021-05-17-15-17-56.png)
-*详细计算过程，来自 zhuanlan.zhihu.com/p/251068800*
+![详细计算过程，来自 zhuanlan.zhihu.com/p/251068800](/images/posts/2021-05-17-15-17-56.png){:caption="详细计算过程，来自 zhuanlan.zhihu.com/p/251068800"}
 
 
 # 为什么需要池化层？
