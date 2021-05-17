@@ -28,9 +28,10 @@ $$x = (m-k1+2*p)/s+1$$
 $$y=(n-k2+2*p)/s+1$$
 
 ![多通道CNN演示，来源zhuanlan.zhihu.com/p/29119239](/images/posts/2021-05-17-15-16-30.jpg)
-多通道CNN演示，来源zhuanlan.zhihu.com/p/29119239
+<center>多通道CNN演示，来源zhuanlan.zhihu.com/p/29119239</center>
 
-![详细计算过程，来自 zhuanlan.zhihu.com/p/251068800](/images/posts/2021-05-17-15-17-56.png){:caption="详细计算过程，来自 zhuanlan.zhihu.com/p/251068800"}
+![详细计算过程，来自 zhuanlan.zhihu.com/p/251068800](/images/posts/2021-05-17-15-17-56.png)
+<center>详细计算过程，来自 zhuanlan.zhihu.com/p/251068800</center>
 
 
 # 为什么需要池化层？
@@ -175,6 +176,7 @@ if __name__ == '__main__':
 ```
 
 ![输出结果](/images/posts/2021-05-17-15-20-21.png)
+
 # CNN反向传播
 
 
