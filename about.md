@@ -25,6 +25,7 @@ I received my B.E. degree in 2019 from Anhui University, Hefei, China, and I am 
 * Email: yongjie_lv@tju.edu.cn
  
 * Github: lyjzsyzlt
+* 简书: https://www.jianshu.com/u/d397270e8119
  
 
 
